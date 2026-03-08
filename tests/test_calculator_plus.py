@@ -5,7 +5,6 @@ sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 from src.calculator_plus import Calculator
 
-
 def run_tests():
     c = Calculator()
 
