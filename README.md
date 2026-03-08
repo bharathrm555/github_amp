@@ -45,6 +45,8 @@ git add src/calculator_plus.py tests/test_calculator_plus.py
 git commit -m "Add CalculatorPlus base code"
 git push -u origin dev
 ```
+![alt text](image.png)
+![alt text](image-1.png)
 
 ### 4) Merge `dev` to `main` and create release v1
 
@@ -55,11 +57,15 @@ git push origin main
 git tag -a v1.0 -m "Version 1 release"
 git push origin v1.0
 ```
+![alt text](image-2.png)
 
 Manual on GitHub:
 
 1. Open Releases -> Draft a new release.
 2. Select tag `v1.0` and publish release notes.
+
+![alt text](image-3.png)
+![alt text](image-4.png)
 
 ### 5) Add classmate as collaborator
 
@@ -67,6 +73,8 @@ Manual on GitHub:
 
 1. Repo `Settings` -> `Collaborators and teams`.
 2. Invite your classmate by GitHub username.
+
+![alt text](image-5.png)
 
 ### 6) Create feature branch `feature/sqrt`
 
@@ -79,6 +87,8 @@ git commit -m "Implement square_root feature"
 git push -u origin feature/sqrt
 ```
 
+![alt text](image-6.png)
+
 ### 7) Critical bug fix on `dev` (divide by zero)
 
 ```bash
@@ -90,6 +100,8 @@ git commit -m "Fix divide by zero bug"
 git push origin dev
 ```
 
+![alt text](image-7.png)
+
 ### 8) Keep `feature/sqrt` up to date with `dev`
 
 ```bash
@@ -98,6 +110,8 @@ git merge dev
 # Resolve conflicts if any
 git push origin feature/sqrt
 ```
+
+![alt text](image-8.png)
 
 ### 9) Create PR, review, update, merge to `dev`
 
@@ -108,12 +122,18 @@ Manual on GitHub:
 3. Apply feedback commits on `feature/sqrt`.
 4. Merge PR after approval.
 
+![alt text](image-9.png)
+![alt text](image-10.png)
+
+
 ### 10) Test in `dev`, merge to `main`, create v2 release
 
 ```bash
 git checkout dev
 python3 src/calculator_plus.py
 python3 tests/test_calculator_plus.py
+
+![alt text](image-11.png)
 
 git checkout main
 git merge dev
@@ -122,10 +142,14 @@ git tag -a v2.0 -m "Version 2 release"
 git push origin v2.0
 ```
 
+![alt text](image-12.png)
+
 Manual on GitHub:
 
 1. Publish release for tag `v2.0`.
 
+![alt text](image-13.png)
+![alt text](image-14.png)
 ## Q2: Git LFS for Large Binary File
 
 Create and use branch `lfs`.
@@ -137,6 +161,8 @@ git lfs track "*.bin"
 git add .gitattributes
 git commit -m "Configure Git LFS for binary files"
 ```
+
+![alt text](image-15.png)
 
 Create a 210MB sample file and push with LFS:
 
@@ -150,12 +176,16 @@ git commit -m "Add 210MB binary file tracked by Git LFS"
 git push -u origin lfs
 ```
 
+![alt text](image-16.png)
+
 Verify LFS tracking:
 
 ```bash
 git lfs ls-files
 cat .gitattributes
 ```
+
+![alt text](image-17.png)
 
 Clone verification on another machine (manual):
 
@@ -166,6 +196,8 @@ git checkout lfs
 git lfs pull
 ls -lh large_files/sample_210mb.bin
 ```
+
+![alt text](image-18.png)
 
 ## Q3: Geometry Calculator + Git Stash Workflow
 
@@ -179,6 +211,8 @@ git commit -m "Add geometry calculator base"
 git push -u origin geometry-calculator
 ```
 
+![alt text](image-19.png)
+
 ### 2) Circle feature branch with stash
 
 ```bash
@@ -187,6 +221,8 @@ git checkout -b feature/circle-area
 git stash push -m "WIP circle area"
 git status
 ```
+
+![alt text](image-20.png)
 
 ### 3) Rectangle feature branch with stash
 
