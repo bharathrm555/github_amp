@@ -17,6 +17,5 @@ def run_tests():
 
     print("All geometry tests passed.")
 
-
 if __name__ == "__main__":
     run_tests()
