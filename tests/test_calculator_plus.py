@@ -23,6 +23,5 @@ def run_tests():
 
     print("All calculator tests passed.")
 
-
 if __name__ == "__main__":
     run_tests()
