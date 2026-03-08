@@ -198,6 +198,8 @@ git stash push -m "WIP rectangle area"
 git status
 ```
 
+![alt text](image-7.png)
+
 ### 4) Complete circle feature
 
 ```bash
@@ -210,6 +212,8 @@ git commit -m "Complete circle area feature"
 git push -u origin feature/circle-area
 ```
 
+![alt text](image-8.png)
+
 ### 5) Complete rectangle feature
 
 ```bash
@@ -221,6 +225,8 @@ git add src/geometry_calculator.py tests/test_geometry_calculator.py
 git commit -m "Complete rectangle area feature"
 git push -u origin feature/rectangle-area
 ```
+
+![alt text](image-7.png)
 
 ### 6) Create PRs and merge
 
