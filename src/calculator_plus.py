@@ -20,7 +20,6 @@ class Calculator:
             raise ValueError("Cannot calculate square root of a negative number.")
         return math.sqrt(x)
 
-
 if __name__ == "__main__":
     calculator = Calculator()
 
