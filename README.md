@@ -1,6 +1,10 @@
-# github_amp (Assignment Implementation) All the execution images are in the images folder I was not able to attach them to the readme so please refer them becasue of the LFS i wasnt able to attach them.
+# github_amp (Assignment Implementation)
 
 This repository contains code and step-by-step Git workflow instructions for all 3 questions.
+
+## Screenshots
+
+All execution screenshots are provided below in their respective sections.
 
 ## Repository Files
 
@@ -127,6 +131,35 @@ Manual on GitHub:
 
 1. Publish release for tag `v2.0`.
 
+### Q1 Workflow Screenshots
+
+![Q1 Step 1 - Create Repository](images/image-1d.png)
+*Creating the private GitHub repository*
+
+![Q1 Step 2 - Initialize and Push](images/image-2d.png)
+*Initializing and pushing the main branch*
+
+![Q1 Step 3 - Create Dev Branch](images/image-3d.png)
+*Creating and setting up the dev branch*
+
+![Q1 Step 4 - Merge and Release v1](images/image-4d.png)
+*Merging dev to main and creating v1.0 release*
+
+![Q1 Step 5 - Add Collaborator](images/image-5d.png)
+*Adding classmate as collaborator*
+
+![Q1 Step 6 - Feature Branch](images/image-6d.png)
+*Creating feature/sqrt branch*
+
+![Q1 Step 7 - Bug Fix](images/image-7d.png)
+*Critical bug fix on dev branch*
+
+![Q1 Step 8 - Update Feature Branch](images/image-8d.png)
+*Keeping feature branch up to date with dev*
+
+![Q1 Step 9 - PR and Merge](images/image-9d.png)
+*Creating PR, reviewing, and merging to dev*
+
 ## Q2: Git LFS for Large Binary File
 
 Create and use branch `lfs`.
@@ -169,6 +202,26 @@ git checkout lfs
 git lfs pull
 ls -lh large_files/sample_210mb.bin
 ```
+
+### Q2 Git LFS Screenshots
+
+![Q2 Step 1 - LFS Setup](images/image-1.png)
+*Setting up Git LFS*
+
+![Q2 Step 2 - Track Binary Files](images/image-8.png)
+*Configuring LFS to track binary files*
+
+![Q2 Step 3 - Create Large File](images/image-9.png)
+*Creating 210MB sample file*
+
+![Q2 Step 4 - Push with LFS](images/image-10.png)
+*Pushing large file with LFS*
+
+![Q2 Step 5 - Verify LFS](images/image-11.png)
+*Verifying LFS tracking*
+
+![Q2 Step 6 - Clone Verification](images/image-12.png)
+*Cloning and pulling LFS files*
 
 ## Q3: Geometry Calculator + Git Stash Workflow
 
@@ -236,6 +289,29 @@ Manual on GitHub:
 
 Then merge `dev` -> `main` and push.
 
+### Q3 Geometry Calculator Screenshots
+
+![Q3 Step 1 - Create Base Branch](images/image-13.png)
+*Creating geometry-calculator base branch*
+
+![Q3 Step 2 - Circle Feature Branch](images/image-14.png)
+*Creating feature/circle-area branch with stash*
+
+![Q3 Step 3 - Rectangle Feature Branch](images/image-15.png)
+*Creating feature/rectangle-area branch with stash*
+
+![Q3 Step 4 - Complete Circle Feature](images/image-16.png)
+*Completing circle area feature*
+
+![Q3 Step 5 - Complete Rectangle Feature](images/image-17.png)
+*Completing rectangle area feature*
+
+![Q3 Step 6 - Create PRs](images/image-18.png)
+*Creating pull requests*
+
+![Q3 Step 7 - Merge PRs](images/image-19.png)
+*Merging pull requests*
+
 ## Commands to Capture Terminal Outputs for Report
 
 Run these and save screenshots/output:
@@ -251,5 +327,10 @@ git branch -a
 git tag
 git lfs ls-files
 ```
+
+### Terminal Output Screenshot
+
+![Terminal Output - Final Results](images/image-20.png)
+*Final terminal output summary showing git log, branches, tags, and LFS files*
 
 # Thus concluding the assignment git operations on github
